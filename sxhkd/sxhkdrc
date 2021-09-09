@@ -8,27 +8,27 @@
 
 # Vivaldi
 super + F1
-	vivaldi-stable
+    /opt/visual-studio-code/code     	
 
 # Atom
 super + F2
-	atom
+	  chromium
 
 #Inkscape
 super + F3
-    inkscape
+      vlc
 
 #Gimp
 super + F4
-    gimp
+    eudic
 
 #Meld
 super + F5
-    meld
-
+    netease-cloud-music 
+    
 #Vlc
 super + F6
-    vlc --video-on-top
+    pamac-manager 
 
 #Virtualbox
 super + F7
@@ -53,6 +53,8 @@ super + F11
 #Rofi
 super + F12
     rofi -show drun
+
+# 我的设置
 
 #################################################################
 # SUPER + ... KEYS

@@ -32,7 +32,7 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-conky -c $HOME/.config/bspwm/system-overview &
+conky -c $HOME/.config/bspwm/system-overview & # 轻量级的 X 系统监视器，可在您的桌面上显示任何类型的信息。
 
 # 开机启动
 run variety &
@@ -46,6 +46,9 @@ picom --config $HOME/.config/bspwm/picom.conf & # 可以给不带合成功能的
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon & # 支持全局键绑定的轻量级音量控制小程序
 run fcitx5 &
+run imwheel &
+run redshift 
+
 #nitrogen --restore &
 #run caffeine &
 #run vivaldi-stable &
