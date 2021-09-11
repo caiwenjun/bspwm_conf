@@ -24,7 +24,7 @@ $HOME/.config/polybar/launch.sh &
 
 # 设置壁纸
 #feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+feh --bg-fill $HOME/.config/variety/Favorites/anime-Overwatch.jpg &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
@@ -32,10 +32,10 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-conky -c $HOME/.config/bspwm/system-overview & # 轻量级的 X 系统监视器，可在您的桌面上显示任何类型的信息。
+#conky #-c $HOME/.config/bspwm/system-overview & # 轻量级的 X 系统监视器，可在您的桌面上显示任何类型的信息。
 
 # 开机启动
-run variety &
+#run variety &
 run nm-applet &
 run pamac-tray & #包管理器
 run xfce4-power-manager &
@@ -47,7 +47,10 @@ picom --config $HOME/.config/bspwm/picom.conf & # 可以给不带合成功能的
 run volumeicon & # 支持全局键绑定的轻量级音量控制小程序
 run fcitx5 &
 run imwheel &
-run redshift 
+run redshift &
+conky -c $HOME/.config/conky/AUR-Allinone.conkyrc &
+
+
 
 #nitrogen --restore &
 #run caffeine &
