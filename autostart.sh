@@ -12,6 +12,7 @@ function run {
 xrandr --newmode "2560x1080_60.00"  230.00  2560 2720 2992 3424  1080 1083 1093 1120 -hsync +vsync
 xrandr --addmode HDMI1 2560x1080_60.00
 xrandr --output HDMI1 --primary --mode 2560x1080_60.00 --left-of eDP1
+
 #autorandr horizontal
 
 #设置状态栏
@@ -25,11 +26,12 @@ $HOME/.config/polybar/launch.sh &
 # 设置壁纸
 #feh --bg-scale ~/.config/bspwm/wall.png &
 feh --bg-fill $HOME/.config/variety/Favorites/anime-Overwatch.jpg &
+conky -c $HOME/.config/conky/AUR-Allinone.conkyrc &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 # 启动设置
-dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
+#dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 #conky #-c $HOME/.config/bspwm/system-overview & # 轻量级的 X 系统监视器，可在您的桌面上显示任何类型的信息。
@@ -48,7 +50,6 @@ run volumeicon & # 支持全局键绑定的轻量级音量控制小程序
 run fcitx5 &
 run imwheel &
 run redshift &
-conky -c $HOME/.config/conky/AUR-Allinone.conkyrc &
 
 
 

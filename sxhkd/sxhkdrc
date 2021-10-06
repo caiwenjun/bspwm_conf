@@ -5,7 +5,6 @@
 #################################################################
 # SUPER + FUNCTION KEYS
 #################################################################
-
 # Vivaldi
 super + F1
     /opt/visual-studio-code/code     	
@@ -318,7 +317,7 @@ Print
 
 #screeenshooter
 ctrl + Print
-     xfce4-screenshooter
+     xfce4-screenshooter -r
 
 #Gnome-Screenshot
 ctrl + shift + Print
@@ -330,8 +329,6 @@ ctrl + shift + Print
 #################################################################
 
 #xfce4-terminal dropdown
-F12
-    xfce4-terminal --drop-down
 
 
 #################################################################
